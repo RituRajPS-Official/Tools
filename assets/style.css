@@ -1,0 +1,11 @@
+h1,h2{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: decimal;
+}
