@@ -15,3 +15,8 @@ li{
 li::after {
   content: ' ✓';
 }
+
+#footer{
+    text-align: center;
+    padding-top: 40px;
+}
