@@ -1,14 +1,158 @@
 [
     {
       "title": "HTML entity encoder/decoder",
-      "description": "This tool uses he to HTML-encode any string you enter in the ‘decoded’ field, or to decode any HTML-encoded string you enter in the ‘encoded’ field.",
-      "url": "/html-entities",
+      "description": "",
+      "url": "tools/html-entities",
       "buttonText": "Click Here"
     },
     {
-      "title": "Information gathering and analysis",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.",
-      "url": "/html-info",
+      "title": "HTML/CSS/JS unquoted attribute value validator",
+      "description": "",
+      "url": "/unquoted-attributes",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Ambiguous ampersand checker for HTML",
+      "description": "",
+      "url": "/ampersands",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Custom HTML element name validator",
+      "description": "",
+      "url": "https://mothereff.in/custom-element-name",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "CSS escaper",
+      "description": "",
+      "url": "https://mothereff.in/css-escapes",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Unquoted CSS font family name validator",
+      "description": "",
+      "url": "https://mothereff.in/font-family",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "JavaScript escaper",
+      "description": "",
+      "url": "https://mothereff.in/js-escapes",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "JavaScript operator precedence",
+      "description": "",
+      "url": "https://mothereff.in/operator-precedence",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "JavaScript variable name validator",
+      "description": "",
+      "url": "https://mothereff.in/js-variables",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "JavaScript property name validator",
+      "description": "",
+      "url": "https://mothereff.in/js-properties",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Punycode IDN domain name converter",
+      "description": "",
+      "url": "https://mothereff.in/punycode",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "URL encoder/decoder",
+      "description": "",
+      "url": "https://mothereff.in/url",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Legacy HTML color value previewer",
+      "description": "(bgcolor, text, link, vlink, and alink attribute values)",
+      "url": "https://mothereff.in/bgcolor",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Base64 encoder/decoder",
+      "description": "",
+      "url": "https://mothereff.in/base64",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "UTF-8 encoder/decoder",
+      "description": "",
+      "url": "https://mothereff.in/utf-8",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "WTF-8 encoder/decoder",
+      "description": "",
+      "url": "https://mothereff.in/wtf-8",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Quoted-Printable encoder/decoder",
+      "description": "",
+      "url": "https://mothereff.in/quoted-printable",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Q encoder/decoder",
+      "description": "",
+      "url": "https://mothereff.in/q",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Binary ↔ ASCII converter",
+      "description": "",
+      "url": "https://mothereff.in/binary-ascii",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Bacon’s cipher encoder/decoder",
+      "description": "",
+      "url": "https://mothereff.in/bacon",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "JavaScript regular expression transpiler",
+      "description": "",
+      "url": "https://mothereff.in/regexpu",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "String reverser",
+      "description": "",
+      "url": "https://mothereff.in/reverse-string",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "String length & UTF-8 byte counter",
+      "description": "",
+      "url": "https://mothereff.in/byte-counter",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Lua minifier",
+      "description": "",
+      "url": "https://mothereff.in/lua-minifier",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "brainfuck minifier",
+      "description": "",
+      "url": "https://mothereff.in/brainfuck-minifier",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Twitalics",
+      "description": "",
+      "url": "https://mothereff.in/twitalics",
       "buttonText": "Click Here"
     }
   ]
