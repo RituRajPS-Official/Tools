@@ -1,7 +1,7 @@
 div#success {
     background-color: aqua;
     border-radius: 8px;
-    border: 2px solid #FFEE58;
+    border: 2px solid #111111;
     padding: 8px;
     margin-left: auto;
     margin-right: auto;
@@ -9,7 +9,7 @@ div#success {
 }
 
 a.button {
-    border: 2px solid wheat;
+    border: 2px solid black;
     background-color: black;
     color: white;
     text-decoration: none;
