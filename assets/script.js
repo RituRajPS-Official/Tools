@@ -30,3 +30,10 @@ fetch('assets/data.json')
       listContainer.appendChild(li);
     });
   });
+
+document.addEventListener('copy', event => {
+  event.preventDefault(); // Prevent default copy behavior
+  const copiedText = window.getSelection().toString(); // Get the copied text
+  // Modify the copiedText or display a message
+  console.log('Copying content is not allowed.');
+});
