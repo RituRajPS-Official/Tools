@@ -1,4 +1,4 @@
-fetch('.data.json')
+fetch('assets/data.json')
   .then(response => response.json())
   .then(data => {
     const listContainer = document.getElementById('list-container');
