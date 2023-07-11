@@ -1,78 +1,133 @@
-	<style>     
-.status {
-	height: 3px;
-	width: 3em;
-	border-radius: 1px;
-	background-color: inherit;
-	animation-duration: 1s;
-	animation-timing-function: ease-in-out;
-	margin: 3px auto 6px 4px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS for responsiveness */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-@keyframes success {
-	0% {
-		background-color: inherit;
-	}
+    .primarch {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-	10% {
-		background-color: rgb(18, 206, 96);
-		;
-	}
+    .banner {
+      text-align: center;
+      color: #333;
+    }
 
-	100% {
-		background-color: inherit;
-	}
-}
+    #cArea {
+      margin-top: 20px;
+    }
 
-@keyframes fail {
-	0% {
-		background-color: inherit;
-	}
+    #cArea input[type="text"],
+    #cArea textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
 
-	10% {
-		background-color: rgb(221, 55, 13);
-		;
-	}
+    #advanced {
+      display: none;
+      margin-top: 10px;
+    }
 
-	100% {
-		background-color: inherit;
-	}
-}
-	</style>
+    #advanced label {
+      display: block;
+      margin-bottom: 5px;
+    }
 
+    #create-link {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
-<!--<svg style='width:100%;height:70px;margin-bottom:30px;' class='line' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path class='c-1' d='M97.12279,268.37336c-.13228,0-.26368-.00488-.39685-.0142a5.51876,5.51876,0,0,1-2.23638-.65787,5.44391,5.44391,0,0,1-1.7614-1.52879.90938.90938,0,0,1,1.45777-1.08756,3.6387,3.6387,0,0,0,1.17546,1.021,3.66232,3.66232,0,0,0,4.34668-.625l2.74243-2.74554a3.66718,3.66718,0,0,0-2.61369-6.20353,3.76424,3.76424,0,0,0-2.57641,1.029l-1.56254,1.55543a.9087.9087,0,1,1-1.282-1.2882l1.5723-1.5652a5.56106,5.56106,0,0,1,3.86461-1.54922,5.48573,5.48573,0,0,1,3.89479,9.29531l-2.754,2.75663a5.47822,5.47822,0,0,1-3.87082,1.60781Z' transform='translate(-83.28591 -252.71361)'></path><path class='c-2' d='M90.76789,274.71361h-.04972a5.48607,5.48607,0,0,1-3.89479-9.29486l2.75485-2.75707a5.47484,5.47484,0,0,1,6.50317-.93575,5.52467,5.52467,0,0,1,1.76229,1.5288.90938.90938,0,0,1-1.45778,1.08756,3.67939,3.67939,0,0,0-1.17634-1.021,3.63292,3.63292,0,0,0-1.49417-.43946,3.6929,3.6929,0,0,0-1.54123.22195,3.638,3.638,0,0,0-1.30951.843l-2.7442,2.746a3.667,3.667,0,0,0,2.61369,6.20264,3.795,3.795,0,0,0,2.57552-1.02852l1.55277-1.5541a.9087.9087,0,1,1,1.28554,1.28465l-1.56342,1.5652A5.45087,5.45087,0,0,1,90.76789,274.71361Z' transform='translate(-83.28591 -252.71361)' opacity='0.4'></path></svg>-->
+    .status {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
 
+    #result {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      resize: none;
+    }
 
-<div id="cArea">
-	<div>
-		<input id="link-to" type="text" placeholder="Enter your link" />
-	</div>
+    .copy-btn {
+      display: inline-block;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      text-decoration: none;
+      margin-right: 10px;
+      cursor: pointer;
+    }
 
-<!--[Config]-->
-<div id="advanced" style="display:none;">
-		<label>Input your redirect page link</label>
-		<br>
-		<input id="link-page" type="text" value="https://tools.gitforge.in/redirect.html"disabled="">
-	</div>
-</div>
-  
-<div id="">
-	<button id="create-link" class="button">Generate</button>
-	<div class="status" id="notifi"></div>
-</div>
+    .outline {
+      background-color: transparent;
+      color: #4CAF50;
+      border: 1px solid #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <div class="primarch">
+    <h2 class="banner">Primarch Safelink</h2>
+    <div id="cArea">
+      <div>
+        <input id="link-to" type="text" placeholder="Enter your link" />
+      </div>
+      <!--[Config]-->
+      <div id="advanced">
+        <label>Input your redirect page link</label>
+        <br />
+        <input id="link-page" type="text" value="https://tools.gitforge.in/redirect.html" disabled=""/>
+      </div>
+    </div>
 
-<div id="cArea">
-	<textarea id="result" style="word-break: break-all;"
-		onkeyup="document.getElementById('open').href = this.value || 'javascript:0'"></textarea>
-	<div>
-		<a name="result" class="copy-btn button" href="javascript:()">Copy</a>
-		<a id="open" class="copy-btn outline button" target="_blank">Open</a>
-	</div>
+    <div id="">
+      <button id="create-link" class="button">Generate</button>
+      <div class="status" id="notifi"></div>
+    </div>
 
-</div>
-
-<script>
+    <div id="cArea">
+      <textarea readonly id="result" style="word-break: break-all" onkeyup="document.getElementById('open').href = this.value || 'javascript:0'"></textarea>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <a name="result" class="copy-btn button" href="javascript:()">Copy</a>
+        <a id="open" class="copy-btn outline button" target="_blank">Open</a>
+      </div>
+    </div>
+  </div>
+    <script>
 	function validate() {
 		if (document.getElementById("link-to").value.length == 0) {
 			return false
@@ -140,3 +195,5 @@
 		});
 	}
 </script>
+</body>
+</html>
