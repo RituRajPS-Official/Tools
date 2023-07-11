@@ -2,6 +2,7 @@ fetch('data.json')
   .then(response => response.json())
   .then(data => {
     const listContainer = document.getElementById('list-container');
+    console.log(data); // Check if the data is printed correctly
     
     // Set the --length CSS variable based on the number of items in the data array
     listContainer.style.setProperty('--length', data.length);
