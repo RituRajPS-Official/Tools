@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 echo "Updating dependencies..."
-./byte-counter/vendor/update.sh
-./html-entities/vendor/update.sh
-./js-escapes/vendor/update.sh
-./lua-minifier/vendor/update.sh
-./punycode/vendor/update.sh
-./reverse-string/vendor/update.sh
-./utf-8/vendor/update.sh
+.tools/byte-counter/vendor/update.sh
+.tools/html-entities/vendor/update.sh
+.tools/js-escapes/vendor/update.sh
+.tools/lua-minifier/vendor/update.sh
+.tools/punycode/vendor/update.sh
+.tools/reverse-string/vendor/update.sh
+.tools/utf-8/vendor/update.sh
