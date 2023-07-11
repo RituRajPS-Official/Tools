@@ -1,3 +1,19 @@
+div#success {
+    background-color: aqua;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+a.button {
+    border: 2px solid wheat;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+
 #wait-btn {
 	width: 112px;
 	height: 36px;
