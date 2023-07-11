@@ -1,0 +1,15 @@
+[
+    {
+      "title": "HTML entity encoder/decoder",
+      "description": "This tool uses he to HTML-encode any string you enter in the ‘decoded’ field, or to decode any HTML-encoded string you enter in the ‘encoded’ field.",
+      "url": "/html-entities",
+      "buttonText": "Click Here"
+    },
+    {
+      "title": "Information gathering and analysis",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.",
+      "url": "/html-info",
+      "buttonText": "Click Here"
+    }
+  ]
+  
