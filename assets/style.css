@@ -12,9 +12,9 @@ li{
     margin-left: 40px;
 }
 
-li::after {
+/* li::after {
   content: ' ✓';
-}
+} */
 
 #footer{
     text-align: center;
