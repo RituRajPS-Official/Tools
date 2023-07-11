@@ -6,6 +6,12 @@
       "buttonText": "Click Here"
     },
     {
+      "title": "Aspect Ratio Calculator",
+      "description": "From this tool you can easily calculate aspect ratio of any image, just choose the image and click on the button.",
+      "url": "/tools/aspect-ratio-calculator",
+      "buttonText": "Click Here"
+    },
+    {
       "title": "HTML/CSS/JS unquoted attribute value validator",
       "description": "",
       "url": "/tools/unquoted-attributes",
