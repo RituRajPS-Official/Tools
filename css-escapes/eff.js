@@ -30,7 +30,7 @@
 		'\'': '\\\'',
 		'\\': '\\\\'
 	};
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -65,7 +65,7 @@
 		return array;
 	}
 
-	// https://mathiasbynens.be/notes/css-escapes
+	// https://www.gitforge.in/notes/css-escapes
 	function cssEscape(string, escapeNonASCII) {
 		// Based on `ucs2decode` from https://mths.be/punycode
 		var firstChar = string.charAt(0);
@@ -172,7 +172,7 @@
 		example.href = 'data:text/html;charset=utf-8,' + encodeURIComponent('<!DOCTYPE html><title>Mothereffing CSS escapes example</title><style>pre{background:#eee;padding:.5em}.test{display:none}' + cssValue + '{display:block}.pass{background:lime}.fail{background:red}</style><h1><a href="https://mothereff.in/css-escapes' + link + '">Mothereffing CSS escapes</a> example</h1><pre><code>' + value.replace(/</g, '&lt;') + '</code></pre><p id="' + value.replace(/"/g, '&quot;') + '" class=test>If you can read this, the escaped CSS selector worked. </p>' + (surrogatePairCount ? '<p>Standard CSS character escape sequences for supplementary Unicode characters aren’t supported in older versions of WebKit. <strong>This test case will fail in those browsers.</strong> It’s better to leave these characters unescaped.</p>' : '') + '<script>var el=document.getElementsByTagName(\'p\')[0];try{document.getElementById(\'' + jsValue + '\').innerHTML += \' <code>document.getElementById</code> worked.\';document.querySelector(\'' + qsaValue + '\').innerHTML+=\' <code>document.querySelector</code> worked.\';el.className=\'pass\'}catch(e){el.innerHTML=\'FAIL\';el.className=\'fail\'}<\/script>');
 	}
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	input.onkeyup = checkbox.onchange = update;
 	input.oninput = function() {
 		this.onkeyup = null;

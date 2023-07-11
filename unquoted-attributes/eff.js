@@ -28,7 +28,7 @@
 	var showHide = function(el, bool) {
 		el.style.display = bool ? 'none' : 'inline';
 	};
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -69,7 +69,7 @@
 		storage && (storage.unquotedAttributes = value);
 	}
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	input.onkeydown = update;
 	input.oninput = function() {
 		this.onkeydown = null;

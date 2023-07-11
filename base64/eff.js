@@ -6,7 +6,7 @@
 	var permalink = document.getElementById('permalink');
 	var regexBase64 = /^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$/;
 	var regexWhitespace = /\s/g;
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -75,7 +75,7 @@
 		storage && (storage.base64 = unicodeString);
 	};
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	unicode.onkeyup = base64.onkeyup = update;
 	unicode.oninput = base64.oninput = function() {
 		unicode.onkeyup = base64.onkeyup = null;

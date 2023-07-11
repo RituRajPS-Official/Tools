@@ -5,7 +5,7 @@
 	var pre = document.getElementsByTagName('pre')[0];
 	var output = document.getElementById('output');
 	var permalink = document.getElementById('permalink');
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -48,7 +48,7 @@
 		permalink.hash = encode(value);
 	};
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	textarea.onkeyup = update;
 	textarea.oninput = function() {
 		textarea.onkeyup = null;

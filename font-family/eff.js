@@ -31,7 +31,7 @@
 	var regexLineBreak = /\r\n?/g;
 	var regexSimpleEscapeCharacters = /[ !"#$%&'()*+,.\/;<=>?@\[\\\]^`{|}~]/;
 	var regexSpaceAtStart = /^\x20/;
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -81,7 +81,7 @@
 		return '\'' + string.replace(regexSingleQuote, '\\\'') + '\'';
 	}
 
-	// https://mathiasbynens.be/notes/css-escapes
+	// https://www.gitforge.in/notes/css-escapes
 	function cssEscape(string, escapeForString) {
 		// Based on `ucs2decode` from https://mths.be/punycode
 		var firstChar = string.charAt(0);
@@ -247,7 +247,7 @@
 		storage && (storage.fontFamily = value);
 	}
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	input.onkeydown = checkbox.onchange = update;
 	input.oninput = function() {
 		this.onkeydown = null;

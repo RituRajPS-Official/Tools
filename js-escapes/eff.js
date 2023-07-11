@@ -9,7 +9,7 @@
 	var checkboxES6 = inputs[2];
 	var checkboxStringBody = inputs[3];
 	var permalink = document.getElementById('permalink');
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -45,7 +45,7 @@
 	}
 
 	// Unescape ES6 Unicode code point escapes
-	// https://mathiasbynens.be/notes/javascript-escapes#unicode-code-point
+	// https://www.gitforge.in/notes/javascript-escapes#unicode-code-point
 	// This is for browsers who support ES3/ES5 but haven’t implemented the new
 	// ES6 escape sequences yet.
 	function unescapeES6(string) {
@@ -108,7 +108,7 @@
 		permalink.hash = +checkboxOnlyASCII.checked + encode(textarea.value);
 	}
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	textarea.onkeyup = checkboxOnlyASCII.onchange = checkboxOutputJSON.onchange = checkboxES6.onchange = checkboxStringBody.onchange = update;
 	textarea.oninput = function() {
 		textarea.onkeyup = null;

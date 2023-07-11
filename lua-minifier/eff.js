@@ -10,8 +10,8 @@
 	    after = dds[1],
 	    ratio = dds[2],
 	    regexNumberGroup = /(?=(?:\d{3})+$)(?!\b)/g,
-	    // https://mathiasbynens.be/notes/localstorage-pattern
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	    // https://www.gitforge.in/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -95,7 +95,7 @@
 		permalink.hash = encode(value);
 	};
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	textarea.onkeyup = update;
 	textarea.oninput = function() {
 		textarea.onkeyup = null;

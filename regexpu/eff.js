@@ -12,7 +12,7 @@
 	var divUseUnicodeFlag = document.getElementsByTagName('div')[2];
 	var run = document.getElementById('run');
 	var permalink = document.getElementById('permalink');
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;

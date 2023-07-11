@@ -8,7 +8,7 @@
 	var regexCharacterReference = /&([0-9a-zA-Z]+);/g;
 	var regexCharacterReferencesThatHaveASemicolonFreeCharacterReferenceAsSubstring;
 	var regexNoSemi;
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -2245,7 +2245,7 @@
 		storage && (storage.ampersandText = value);
 	};
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	textarea.onkeyup = update;
 	textarea.oninput = function() {
 		textarea.onkeyup = null;

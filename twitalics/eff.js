@@ -10,7 +10,7 @@
 	var italic = checkboxes[3];
 	var bold = checkboxes[4];
 	var permalink = document.getElementById('permalink');
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -134,7 +134,7 @@
 		permalink.hash = encode(textarea.value);
 	}
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	textarea.onkeyup = script.onchange = fraktur.onchange = serif.onchange = italic.onchange = bold.onchange = update;
 	textarea.oninput = function() {
 		textarea.onkeyup = null;

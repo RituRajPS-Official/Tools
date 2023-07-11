@@ -4,7 +4,7 @@
 	var decoded = textareas[0];
 	var encoded = textareas[1];
 	var permalink = document.getElementById('permalink');
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -59,7 +59,7 @@
 		storage && (storage.utf8 = value);
 	};
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	decoded.onkeyup = encoded.onkeyup = update;
 	decoded.oninput = encoded.oninput = function() {
 		decoded.onkeyup = encoded.onkeyup = null;

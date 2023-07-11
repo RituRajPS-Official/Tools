@@ -1,4 +1,4 @@
-/*! https://mths.be/utf8js v2.0.0 by @mathias */
+/*! https://mths.be/utf8js v2.0.0 by GitForge */
 ;(function(root) {
 
 	// Detect free variables `exports`

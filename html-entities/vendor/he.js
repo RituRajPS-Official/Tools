@@ -1,4 +1,4 @@
-/*! https://mths.be/he v0.5.0 by @mathias | MIT license */
+/*! https://mths.be/he v0.5.0 by GitForge | MIT license */
 ;(function(root) {
 
 	// Detect free variables `exports`.
@@ -37,7 +37,7 @@
 		'&': '&amp;',
 		'\'': '&#x27;',
 		'<': '&lt;',
-		// See https://mathiasbynens.be/notes/ambiguous-ampersands: in HTML, the
+		// See https://www.gitforge.in/notes/ambiguous-ampersands: in HTML, the
 		// following is not strictly necessary unless it’s part of a tag or an
 		// unquoted attribute value. We’re only escaping it to support those
 		// situations, and for XML support.
@@ -194,7 +194,7 @@
 		return string
 			// Encode astral symbols.
 			.replace(regexAstralSymbols, function($0) {
-				// https://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
+				// https://www.gitforge.in/notes/javascript-encoding#surrogate-formulae
 				var high = $0.charCodeAt(0);
 				var low = $0.charCodeAt(1);
 				var codePoint = (high - 0xD800) * 0x400 + low - 0xDC00 + 0x10000;

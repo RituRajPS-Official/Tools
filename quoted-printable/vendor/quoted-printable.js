@@ -1,4 +1,4 @@
-/*! https://mths.be/quoted-printable v0.2.1 by @mathias | MIT license */
+/*! https://mths.be/quoted-printable v0.2.1 by GitForge | MIT license */
 ;(function(root) {
 
 	// Detect free variables `exports`.

@@ -1,4 +1,4 @@
-/*! https://mths.be/luamin v1.0.2 by @mathias */
+/*! https://mths.be/luamin v1.0.2 by GitForge */
 ;(function(root) {
 
 	// Detect free variables `exports`

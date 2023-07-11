@@ -7,7 +7,7 @@
 	var encodeSpecialOnly = checkboxes[0];
 	var useNamedReferences = checkboxes[1];
 	var permalink = document.getElementById('permalink');
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -46,7 +46,7 @@
 		storage && (storage.he = value);
 	};
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	decoded.onkeyup = encoded.onkeyup = encodeSpecialOnly.onchange = useNamedReferences.onchange = update;
 	decoded.oninput = encoded.oninput = encodeSpecialOnly.onchange = useNamedReferences.onchange = function() {
 		decoded.onkeyup = encoded.onkeyup = null;

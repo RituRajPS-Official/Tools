@@ -11,7 +11,7 @@
 	var ratio = dds[2];
 	var regexNotBrainfuck = /[^\+\-<>\[\],\.]/g;
 	var regexNumberGroup = /(?=(?:\d{3})+$)(?!\b)/g;
-	// https://mathiasbynens.be/notes/localstorage-pattern
+	// https://www.gitforge.in/notes/localstorage-pattern
 	var storage = (function() {
 		var uid = new Date;
 		var storage;
@@ -89,7 +89,7 @@
 		storage && (storage.brainfuck = value);
 	};
 
-	// https://mathiasbynens.be/notes/oninput
+	// https://www.gitforge.in/notes/oninput
 	textarea.onkeyup = update;
 	textarea.oninput = function() {
 		textarea.onkeyup = null;
